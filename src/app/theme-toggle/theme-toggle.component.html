@@ -1,0 +1,13 @@
+<!-- <button (click)="toggleTheme()">
+    Switch to {{ isDarkTheme() ? 'Light' : 'Dark' }} Mode
+  </button> -->
+
+  <!-- theme-toggle.component.html -->
+  <!-- <button (click)="toggleTheme()" class="theme-toggle-button" style="border: 1px solid black">
+    <i class="bi" [ngClass]="isDarkTheme() ? 'bi-brightness-high-fill' : 'bi-moon-fill'"></i>
+  </button> -->
+  
+  <button (click)="toggleTheme()" class="theme-toggle-button">
+    <img [src]="isDarkTheme() ? 'assets/Light-Mode.jpeg' : 'assets/Dark-mode.jpeg'" alt="Toggle theme">
+  </button>
+  

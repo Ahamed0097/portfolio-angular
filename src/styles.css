@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+    max-width: 1140px;
+}
+
+
+.tag{
+    padding: 0 20px;
+    height: 30px;
+    width: fit-content;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 25px;
+    color: black;
+}
+
+html, body { height: 100%; }
+/* body {
+     margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+ }
+
+ body.light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark-theme {
+    background-color: #121212;
+    color: white;
+  } */
+
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Ensure other components follow the theme */
+  * {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Ensure the color of icons inside the button is set */
+  .theme-toggle-button i {
+    color: inherit;
+  }
+  
+

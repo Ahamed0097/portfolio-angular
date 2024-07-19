@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/IMG_9874.JPG" alt="profile pic" width="256" height="256" class="rounded-circle">
+                <p>Highly motivated and skilled Angular Developer with 1 year of internship experience, seeking a challenging position to leverage my expertise in Angular development and contribute to innovative projects. I am eager to stay updatedon industry trends and contribute to team success.Eager, adaptable, and poised for exciting opportunities.Let's build the future of the web together!</p>
+            </div>
+        </div>
+
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures"> 
+                    <slide><img src={{picture}}  alt="slide" style="display: block; width: 100%;"></slide>
+                </div>
+            </carousel>
+
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <P>visit the Project section to learn More</P>
+        </div>
+    </div>
+</div>

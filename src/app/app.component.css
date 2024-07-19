@@ -1,0 +1,18 @@
+/* app.component.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .theme-toggle {
+    margin-left: auto;
+  }
+  
